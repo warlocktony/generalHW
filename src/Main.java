@@ -10,8 +10,8 @@ public class Main {
         bookTomSawyer.setAgeBook(1877);
         System.out.println("bookTomSawyer.getAgeBook() = " + bookTomSawyer.getAgeBook());
 
-        System.out.println("Author first name - " + authorOfTomSawyer.getFirstName());
-        System.out.println("Author second name - " + authorOfTomSawyer.getSecondName());
+        System.out.println("Author first name - " + bookTomSawyer.getAuthor().getFirstName());
+        System.out.println("Author second name - " + bookTomSawyer.getAuthor().getSecondName());
 
 
         Author authorOfTheLordOfRings = new Author("John ", " Tolkien");
@@ -22,8 +22,8 @@ public class Main {
         System.out.println("Age - " + bookTheLordOfRings.getAgeBook());
         bookTheLordOfRings.setAgeBook(1955);
         System.out.println("bookTheLordOfRings.getAgeBook() = " + bookTheLordOfRings.getAgeBook());
-        System.out.println("Author first name - " + authorOfTheLordOfRings.getFirstName());
-        System.out.println("Author second name - " + authorOfTheLordOfRings.getSecondName());
+        System.out.println("Author first name - " + bookTheLordOfRings.getAuthor().getFirstName());
+        System.out.println("Author second name - " + bookTheLordOfRings.getAuthor().getSecondName());
 
     }
 }
