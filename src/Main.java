@@ -13,7 +13,6 @@ public class Main {
         System.out.println("Author first name - " + bookTomSawyer.getAuthor().getFirstName());
         System.out.println("Author second name - " + bookTomSawyer.getAuthor().getSecondName());
 
-
         Author authorOfTheLordOfRings = new Author("John ", " Tolkien");
 
         Book bookTheLordOfRings = new Book("The Lord of Rings", authorOfTheLordOfRings, 1954 );
