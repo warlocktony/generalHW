@@ -13,26 +13,27 @@ public class Author {
     public String getFirstName() {
         return this.firstName;
     }
-    public String getSecondName(){
+
+    public String getSecondName() {
         return this.secondName;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Author - " + this.firstName + "" + this.secondName;
     }
 
     @Override
-    public boolean equals(Object o){
-        if(o!=null){
+    public boolean equals(Object o) {
+        if (o == null) {
             return false;
         }
 
-        if(this == o){
+        if (this == o) {
             return true;
         }
 
-        if(this.getClass() != o.getClass()){
+        if (this.getClass() != o.getClass()) {
             return false;
         }
         Author author = (Author) o;
@@ -41,7 +42,7 @@ public class Author {
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return Objects.hash(firstName, secondName);
     }
 }

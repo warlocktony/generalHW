@@ -29,7 +29,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "book - " + this.bookName + " " + author.toString() + " age " + this.ageBook;
+        return "book - " + this.bookName + " ; " + author.toString() + " age - " + this.ageBook;
     }
 
     @Override
